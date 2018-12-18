@@ -17,10 +17,4 @@ module.exports = [
     type: 'string',
     message: 'Author',
   },
-  {
-    name: `isPrivateRepo`,
-    type: 'confirm',
-    message: 'Is this a private repository?',
-    default: false,
-  },
 ]
