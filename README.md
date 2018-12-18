@@ -3,29 +3,19 @@ NSoft General Vue CLI Plugin
 
 # Table of Contents
 
-## Dependecies
-// List of tools and libraries that we use in project.
-
 ## Installing
-// how install e.g. git clone, npm install...
+If you haven't yet installed vue-cli 3, first follow the install instructions here: https://github.com/vuejs/vue-cli
 
-## Running the app
-// how to start app, port etc?
+Generate a project :
 
-### Other commands
-// how to build, how to lint, end to end?
+```
+vue create my-app
+```
 
-## Project structure
-// config files source, assets, src directory structue, Routing i State Structure
+To install the vuetify plugin:
 
-## Configuration
-// Webpack configuration, where do we define env variables, gitignore...
+```
+cd my-app
+vue add @nsoft/nsoft
+```
 
-## Naming
-// File naming: components, directives, files, folders, unit testing files...
-
-## Testing
-
-// Unit Testing and test files location
-// E2E Testing and test files location
-// Code coverage and code quality
