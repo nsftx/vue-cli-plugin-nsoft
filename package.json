@@ -1,0 +1,30 @@
+
+{
+  "name": "@nsoft/vue-cli-plugin-nsoft",
+  "version": "0.0.1",
+  "description": "NSoft plugin for Vue CLI 3",
+  "author": "team@nsoft.com",
+  "contributors": [
+    "Marko Vučina <vucina.marko@nsoft.com>",
+    "Dinko Miletić <miletic.dinko@nsoft.com>",
+    "Ivan Pandžić <pandzic.ivan@nsoft.com>",
+    "Josip Krišto <kristo.josip@nsoft.com>"
+  ],
+  "private": false,
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chmjs/vue-cli-plugin-nsoft"
+  },
+  "keywords": [
+    "nsoft",
+    "vue-cli",
+    "plugin"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chmjs/vue-cli-plugin-nsoft/issues"
+  },
+  "homepage": "https://github.com/chmjs/vue-cli-plugin-nsoft/blob/master/README.md"
+}
+
