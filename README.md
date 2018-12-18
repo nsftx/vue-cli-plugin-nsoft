@@ -3,12 +3,13 @@ NSoft General Vue CLI Plugin
 
 ## :star: Features
 
-- A Vue CLI Plugin to generate a project structure for your project.
+- Vue CLI Plugin to generate a project structure for your project.
 
 ## Table of contents
 
 - [Getting started](#getting-started)
 - [Plugin options](#plugin-options)
+- [Generated project structure](#generated-project-structure)
 
 ---
 
@@ -35,7 +36,7 @@ vue add @nsoft/nsoft
 * `Project description` - description of your repository, written to `package.json` in `description` field
 * `Author` - author of your repository, written to `package.json` in `author` field, defaults to empty field
 
-## Generated project structure:
+## Generated project structure
 
 ``` bash
 .
@@ -44,45 +45,47 @@ vue add @nsoft/nsoft
 │   ├── favicon.ico
 │   └── index.html
 └── 📂 src
-│    ├── 📂 api
-│    │   ├── 📂 interceptors
-│    │   ├── http.js
-│    │   └── index.js
-│    ├── 📂 assets
-│    ├── 📂 components
-│    │   ├── SampleBox.vue
-│    │   ├── SampleBox.spec.js
-│    │   └── index.js
-│    ├── 📂 directives
-│    │   └── index.js
-│    ├── 📂 filters
-│    │   └── index.js
-│    ├── 📂 layouts
-│    │   └── TemplateDefault.vue
-│    ├── 📂 mixins
-│    │   └── index.js
-│    ├── 📂 pages
-│    │   ├── Home.vue
-│    ├── 📂 plugins
-│    │   ├── index.js
-│    ├── 📂 router
-│    │   ├── index.js
-│    │   └── navigationGuards.js
-│    ├── 📂 store
-│    │   ├── 📂 modules
-│    │   ├── 📂 plugins
-│    │   ├── actions.js
-│    │   ├── getters.js
-│    │   ├── index.js
-│    │   ├── mutationTypes.js
-│    │   ├── mutations.js
-│    │   ├── state.js
-│    │   └── storeConfig.js
-│    ├── 📂 utility
-│    │   └── index.js
-│    ├── App.vue
-│    ├── main.js
+│   ├── 📂 api
+│   │   ├── 📂 interceptors
+│   │   ├── http.js
+│   │   └── index.js
+│   ├── 📂 assets
+│   ├── 📂 components
+│   │   ├── SampleBox.vue
+│   │   ├── SampleBox.spec.js
+│   │   └── index.js
+│   ├── 📂 directives
+│   │   └── index.js
+│   ├── 📂 filters
+│   │   └── index.js
+│   ├── 📂 layouts
+│   │   └── TemplateDefault.vue
+│   ├── 📂 mixins
+│   │   └── index.js
+│   ├── 📂 pages
+│   │   ├── Home.vue
+│   ├── 📂 plugins
+│   │   ├── index.js
+│   ├── 📂 router
+│   │   ├── index.js
+│   │   └── navigationGuards.js
+│   ├── 📂 store
+│   │   ├── 📂 modules
+│   │   ├── 📂 plugins
+│   │   ├── actions.js
+│   │   ├── getters.js
+│   │   ├── index.js
+│   │   ├── mutationTypes.js
+│   │   ├── mutations.js
+│   │   ├── state.js
+│   │   └── storeConfig.js
+│   ├── 📂 utility
+│   │   └── index.js
+│   ├── App.vue
+│   ├── main.js
 ├── 📂 tests
+│    ├── 📂 e2e
+│    └── 📂 unit
 ├── .browserslistrc
 ├── .editorconfig
 ├── .eslintrc.js
