@@ -12,7 +12,7 @@ Generate a project :
 vue create my-app
 ```
 
-To install the vuetify plugin:
+To install the nsoft plugin:
 
 ```
 cd my-app
