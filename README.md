@@ -84,8 +84,8 @@ vue add @nsoft/nsoft
 │   ├── App.vue
 │   ├── main.js
 ├── 📂 tests
-│    ├── 📂 e2e
-│    └── 📂 unit
+│   ├── 📂 e2e
+│   └── 📂 unit
 ├── .browserslistrc
 ├── .editorconfig
 ├── .eslintrc.js
