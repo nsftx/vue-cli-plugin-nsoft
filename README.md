@@ -41,6 +41,7 @@ vue add @nsoft/nsoft
 ``` bash
 .
 ├── 📂 config
+│   └── .env.js
 ├── 📂 public
 │   ├── favicon.ico
 │   └── index.html
