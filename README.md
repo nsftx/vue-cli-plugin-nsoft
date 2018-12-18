@@ -65,25 +65,34 @@ vue add @nsoft/nsoft
 │    │   ├── Home.vue
 │    ├── 📂 plugins
 │    │   ├── index.js
-│    |__ 📂 router
+│    ├── 📂 router
 │    │   ├── index.js
 │    │   └── navigationGuards.js
 │    ├── 📂 store
-│    |   ├── 📂 modules
-│    |   ├── 📂 plugins
-|    |   ├── actions.js
-|    |   ├── getters.js
-|    |   ├── index.js
-|    |   ├── mutationTypes.js
-|    |   ├── mutations.js
-|    |   ├── state.js
-|    |   └── storeConfig.js
+│    │   ├── 📂 modules
+│    │   ├── 📂 plugins
+│    │   ├── actions.js
+│    │   ├── getters.js
+│    │   ├── index.js
+│    │   ├── mutationTypes.js
+│    │   ├── mutations.js
+│    │   ├── state.js
+│    │   └── storeConfig.js
 │    ├── 📂 utility
-|    |   └── index.js
+│    │   └── index.js
 │    ├── App.vue
 │    ├── main.js
-└── 📂 tests
-
-
+├── 📂 tests
+├── .browserslistrc
+├── .editorconfig
+├── .eslintrc.js
+├── .gitignore
+├── CHANGELOG.md
+├── README.md
+├── babel.config.js
+├── jest.config.js
+├── package.json
+├── postcss.config.js
+└── vue.config.js
 
 ```
