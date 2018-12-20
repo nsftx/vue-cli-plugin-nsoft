@@ -1,4 +1,29 @@
+const fs = require('fs');
+const rimraf = require('rimraf');
+
 module.exports = (api, options, rootOptions) => {
+
+  const removeConfigurations = () => {
+    const packageConfig = api.resolve('./package.json');
+    const configsToRemove = ['eslintConfig','browserslist','postcss','jest'];
+
+    fs.readFile(packageConfig, 'utf8', (err, data) => {
+      let parsedConfig = JSON.parse(data);
+
+      configsToRemove.forEach((config) => {
+        if(parsedConfig[config]) {
+          delete parsedConfig[config]
+        }
+      })
+
+      const modifiedPackageConfig = JSON.stringify(parsedConfig, null, 2);
+      fs.writeFile(packageConfig, modifiedPackageConfig, (err) => {
+        api.exitLog('Something went wrong..', err);
+      });
+    });
+  }
+
+
   api.extendPackage({
     name: options.name,
     description: options.description,
@@ -45,5 +70,15 @@ module.exports = (api, options, rootOptions) => {
 
   api.render('./template/default', {
     ...options,
+  });
+
+  api.onCreateComplete(() => {
+
+    removeConfigurations();
+
+    const pathsToRemove = ['./src/components/HelloWorld.vue','./src/views','./src/router.js'];
+    pathsToRemove.forEach((path) => {
+      rimraf(api.resolve(path), () => {});
+    });
   });
 }
