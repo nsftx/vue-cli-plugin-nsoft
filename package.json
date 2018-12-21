@@ -1,7 +1,6 @@
-
 {
   "name": "@nsoft/vue-cli-plugin-nsoft",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "NSoft plugin for Vue CLI 3",
   "author": "team@nsoft.com",
   "contributors": [
@@ -25,6 +24,8 @@
   "bugs": {
     "url": "https://github.com/chmjs/vue-cli-plugin-nsoft/issues"
   },
-  "homepage": "https://github.com/chmjs/vue-cli-plugin-nsoft/blob/master/README.md"
+  "homepage": "https://github.com/chmjs/vue-cli-plugin-nsoft/blob/master/README.md",
+  "dependencies": {
+    "rimraf": "^2.6.2"
+  }
 }
-

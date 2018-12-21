@@ -23,7 +23,7 @@ Generate a project :
 vue create my-app
 ```
 
-To install the nsoft plugin:
+To install nsoft plugin:
 
 ```
 cd my-app
@@ -32,9 +32,9 @@ vue add @nsoft/nsoft
 
 ## Plugin options
 
-* `Project name` - name of your repository, written to `package.json` in `name` field
-* `Project description` - description of your repository, written to `package.json` in `description` field
-* `Author` - author of your repository, written to `package.json` in `author` field, defaults to empty field
+* `Project name` - name of your repository, written to `package.json`
+* `Project description` - description of your repository, written to `package.json`
+* `Author` - author of your repository, written to `package.json`
 
 ## Generated project structure
 
