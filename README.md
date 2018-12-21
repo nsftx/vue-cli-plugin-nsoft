@@ -8,8 +8,11 @@ NSoft General Vue CLI Plugin
 ## Table of contents
 
 - [Getting started](#getting-started)
+- [Commands](#commands)
+- [Source Structure](#source-structure)
 - [Plugin options](#plugin-options)
 - [Generated project structure](#generated-project-structure)
+- [Testing](#testing)
 
 ---
 
@@ -29,6 +32,56 @@ To install nsoft plugin:
 cd my-app
 vue add @nsoft/nsoft
 ```
+
+## Commands
+
+- `npm run serve`: Run app in development mode.
+- `npm run build`: Production ready build.
+- `npm run lint`: Lint the files using ESLint.
+- `npm run test:coverage`: Generate coverage with codecov.
+- `npm run test:e2e`: End-to-end tests with [Nightwatch](http://nightwatchjs.org/).
+- `npm run test:unit` Start the Karma Test Runner.
+- `npm run test:unitUpdate`:  
+- `npm run test:unitWatch`: Watch changes and run unit test.
+
+## Source Structure
+
+**Folder structure:**
+
+- `api/`: abstraction for  external communication
+- `assets/`: module assets (processed by module bundler)
+- `components/`: all components that are not main view in flat structure
+- `directives/`: all directives in flat structure
+- `filters/`: all filters in flat structure
+- `mixins/`: all mixins in flat structure
+- `plugins/`: for plugins inclusion
+- `utility/`: helper functions in flat structure
+- `pages/`: component pages
+- `layouts/`: component template pages
+- `store/`: store stuff 
+- `router/`:  routing stuff 
+- `main.js`:  app entry file
+- `App.vue`:  main app component
+
+**Router structure:**
+- `index.js`: app routes
+- `{pageRouter}.js`:  nested routes can be defined in separated file with appropriate name
+- `navigatonGuards.js`:  definition of global guards
+
+**Store structure:**
+- `state.js`:  state tree
+- `getters.js`:  all getters
+- `mutations.js`:  all mutations
+- `mutationTypes.js`:  keep all mutation types here
+- `actions.js`:  all actions
+- `plugins/`:  plugins in flat structure
+- `modules/`:  keep modules with appropriate named folders with same structure of files 
+- `index.js`:  where we assemble modules and export the store
+
+**Note:** `public/` is outside of `src/` folder, keep static assets that are directly copied there
+
+**Component styleguide:** Follow vue official [styleguide](https://vuejs.org/v2/style-guide/#Priority-B-Rules-Strongly-Recommended-Improving-Readability)
+
 
 ## Plugin options
 
@@ -100,3 +153,7 @@ vue add @nsoft/nsoft
 └── vue.config.js
 
 ```
+
+## Testing
+
+ - test files should be located next to file (xy.js and xy.spec.js) 
