@@ -40,8 +40,8 @@ vue add @nsoft/nsoft
 - `npm run lint`: Lint the files using ESLint.
 - `npm run test:coverage`: Generate coverage with codecov.
 - `npm run test:e2e`: End-to-end tests with [Nightwatch](http://nightwatchjs.org/).
-- `npm run test:unit` Start the Karma Test Runner.
-- `npm run test:unitUpdate`:  
+- `npm run test:unit` Start the Jest Test Runner.
+- `npm run test:unitUpdate`:
 - `npm run test:unitWatch`: Watch changes and run unit test.
 
 ## Source Structure
@@ -58,8 +58,8 @@ vue add @nsoft/nsoft
 - `utility/`: helper functions in flat structure
 - `pages/`: component pages
 - `layouts/`: component template pages
-- `store/`: store stuff 
-- `router/`:  routing stuff 
+- `store/`: store stuff
+- `router/`:  routing stuff
 - `main.js`:  app entry file
 - `App.vue`:  main app component
 
@@ -75,7 +75,7 @@ vue add @nsoft/nsoft
 - `mutationTypes.js`:  keep all mutation types here
 - `actions.js`:  all actions
 - `plugins/`:  plugins in flat structure
-- `modules/`:  keep modules with appropriate named folders with same structure of files 
+- `modules/`:  keep modules with appropriate named folders with same structure of files
 - `index.js`:  where we assemble modules and export the store
 
 **Note:** `public/` is outside of `src/` folder, keep static assets that are directly copied there
@@ -156,4 +156,4 @@ vue add @nsoft/nsoft
 
 ## Testing
 
- - test files should be located next to file (xy.js and xy.spec.js) 
+ - test files should be located next to file (xy.js and xy.spec.js)
