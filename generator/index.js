@@ -44,6 +44,7 @@ module.exports = (api, options, rootOptions) => {
     dependencies: {
       "axios": "^0.18.0",
       "lodash": "^4.17.11",
+      "numeral": "^2.0.6",
       "vue": "^2.5.17",
       "vue-router": "^3.0.1",
       "vuex": "^3.0.1"
