@@ -4,7 +4,7 @@ module.exports = [
     type: 'string',
     required: true,
     message: 'Project Name',
-    default: 'NSoft App',
+    default: 'nsoft-app',
   },
   {
     name: 'description',
