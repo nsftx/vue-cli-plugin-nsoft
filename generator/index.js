@@ -50,6 +50,7 @@ module.exports = (api, options, rootOptions) => {
       "vuex": "^3.0.1"
     },
     devDependencies: {
+      "@babel/core": "^7.2.2",
       "@vue/cli-plugin-babel": "^3.0.5",
       "@vue/cli-plugin-e2e-nightwatch": "^3.0.5",
       "@vue/cli-plugin-eslint": "^3.0.5",
@@ -57,14 +58,13 @@ module.exports = (api, options, rootOptions) => {
       "@vue/cli-service": "^3.0.5",
       "@vue/eslint-config-airbnb": "^4.0.0",
       "@vue/test-utils": "^1.0.0-beta.20",
-      "babel-core": "7.0.0-bridge.0",
       "babel-eslint": "^10.0.1",
       "babel-jest": "^23.6.0",
       "codecov": "^3.1.0",
       "eslint": "^5.8.0",
-      "eslint-plugin-vue": "^5.0.0-0",
-      "node-sass": "^4.9.0",
-      "sass-loader": "^7.0.1",
+      "eslint-plugin-vue": "^5.1.0",
+      "node-sass": "^4.11.0",
+      "sass-loader": "^7.1.0",
       "vue-template-compiler": "^2.5.17"
     }
   });
