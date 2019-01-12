@@ -3,6 +3,13 @@ const rimraf = require('rimraf');
 
 module.exports = (api, options, rootOptions) => {
 
+  const pathsToRemove = [
+    'src/router.js',
+    'src/store.js',
+    'src/components/HelloWorld.vue',
+    'src/views',
+  ]
+
   const removeConfigurations = () => {
     const packageConfig = api.resolve('./package.json');
     const configsToRemove = ['eslintConfig','browserslist','postcss','jest'];
@@ -77,9 +84,9 @@ module.exports = (api, options, rootOptions) => {
 
     removeConfigurations();
 
-    const pathsToRemove = ['./src/components/HelloWorld.vue','./src/views','./src/router.js'];
     pathsToRemove.forEach((path) => {
       rimraf(api.resolve(path), () => {});
     });
+
   });
 }
