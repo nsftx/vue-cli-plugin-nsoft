@@ -57,7 +57,7 @@ module.exports = (api, options, rootOptions) => {
       "vuex": "^3.0.1"
     },
     devDependencies: {
-      "@babel/core": "^7.2.2",
+      "babel-core": "7.0.0-bridge.0",
       "@vue/cli-plugin-babel": "^3.0.5",
       "@vue/cli-plugin-e2e-nightwatch": "^3.0.5",
       "@vue/cli-plugin-eslint": "^3.0.5",

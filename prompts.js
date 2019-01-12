@@ -16,5 +16,6 @@ module.exports = [
     name: 'author',
     type: 'string',
     message: 'Author',
+    default: 'NSoft',
   },
 ]
