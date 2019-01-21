@@ -1,6 +1,6 @@
 {
   "name": "@nsoft/vue-cli-plugin-nsoft",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "NSoft plugin for Vue CLI 3",
   "author": "team@nsoft.com",
   "contributors": [
