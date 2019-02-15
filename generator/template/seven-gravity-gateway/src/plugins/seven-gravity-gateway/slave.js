@@ -1,0 +1,1 @@
+import GatewaySlave from '@nsoft/seven-gravity-gateway/slave';

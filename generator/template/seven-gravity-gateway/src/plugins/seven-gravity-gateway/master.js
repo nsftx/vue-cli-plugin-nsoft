@@ -1,0 +1,1 @@
+import GatewayMaster from '@nsoft/seven-gravity-gateway/master';

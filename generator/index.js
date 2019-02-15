@@ -76,6 +76,18 @@ module.exports = (api, options, rootOptions) => {
     }
   });
 
+  if (options.sevenGravityGateway) {
+    api.extendPackage({
+      dependencies: {
+        "@nsoft/seven-gravity-gateway": "^1.10.1"
+      }
+    });
+
+    api.render('./template/seven-gravity-gateway', {
+      ...options,
+    });
+  }
+
   api.render('./template/default', {
     ...options,
   });
