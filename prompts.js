@@ -18,4 +18,10 @@ module.exports = [
     message: 'Author',
     default: 'NSoft',
   },
+  {
+    name: 'sevenGravityGateway',
+    type: 'confirm',
+    message: 'Do you want to include Seven Gravity Gateway',
+    default: false
+  },
 ]
