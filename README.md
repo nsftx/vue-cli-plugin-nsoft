@@ -89,6 +89,36 @@ vue add @nsoft/nsoft
 * `Project description` - description of your repository, written to `package.json`
 * `Author` - author of your repository, written to `package.json`
 
+### Additional plugins
+
+#### Seven Gravity Gateway
+
+In case Seven Gravity Gateway is accepted on project creation:
+* `@nsoft/seven-gravity-gateway` is added as NPM dependecy 
+* two utilities are created under `src/plugins/seven-gravity-gateway` which are promise based wrappers around `master/slave` instances 
+
+##### Example 
+```javascript
+// Using slave
+import Gateway from '@/plugins/seven-gravity-gateway/slave';
+const config = {
+  slaveId: 'test',
+  data: {
+    dummyProp: 'dummyProp',
+  },
+  debug: true,
+};
+Gateway.init(config).then(function() {
+  // emit when slave is ready for interaction/futher message exchange
+  Gateway.api.emit({
+    action: 'Slave.Loaded',
+    data: {
+      someData: 'data'
+    }
+  })
+});
+```
+
 ## Generated project structure
 
 ``` bash
