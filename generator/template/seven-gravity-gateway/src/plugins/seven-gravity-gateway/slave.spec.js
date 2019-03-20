@@ -1,7 +1,7 @@
 import Gateway from '@/plugins/seven-gravity-gateway/slave';
 
 describe('slave', () => {
-  it('should instantiate gateway slave with passed config', () => {
+  it('init() should instantiate gateway slave with passed config', () => {
     Gateway.init({ slaveId: 'TestSlaveId', debug: true });
     // fake load event
     Gateway.api.config.load({});

@@ -100,7 +100,7 @@ In case Seven Gravity Gateway is accepted on project creation:
 ##### Example 
 ```javascript
 // Using slave
-import Gateway from '@/plugins/seven-gravity-gateway/slave';
+import GatewaySlave from '@/plugins/seven-gravity-gateway/slave';
 const config = {
   slaveId: 'test',
   data: {
@@ -108,15 +108,26 @@ const config = {
   },
   debug: true,
 };
-Gateway.init(config).then(function() {
+GatewaySlave.init(config).then(function() {
   // emit when slave is ready for interaction/futher message exchange
-  Gateway.api.emit({
+  GatewaySlave.api.emit({
     action: 'Slave.Loaded',
     data: {
       someData: 'data'
     }
   })
 });
+
+import GatewayMaster from '@/plugins/seven-gravity-gateway/master';
+GatewayMaster.init();
+GatewayMaster.addSlave({
+  frameId: 'DummyFrame',
+  slaveId: 'SlaveId',
+}).then((message) => {
+  // slave finished with loading and ready for interaction
+});
+
+// using master
 ```
 
 ## Generated project structure
