@@ -118,16 +118,17 @@ GatewaySlave.init(config).then(function() {
   })
 });
 
+// using master
 import GatewayMaster from '@/plugins/seven-gravity-gateway/master';
-GatewayMaster.init();
+GatewayMaster.init({
+  debug: false
+});
 GatewayMaster.addSlave({
   frameId: 'DummyFrame',
   slaveId: 'SlaveId',
 }).then((message) => {
   // slave finished with loading and ready for interaction
 });
-
-// using master
 ```
 
 ## Generated project structure
