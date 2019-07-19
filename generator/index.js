@@ -57,10 +57,10 @@ module.exports = (api, options, rootOptions) => {
     },
     devDependencies: {
       "babel-core": "7.0.0-bridge.0",
-      "@vue/cli-plugin-e2e-nightwatch": "^3.0.5",
-      "@vue/cli-plugin-unit-jest": "^3.0.5",
+      "@vue/cli-plugin-e2e-nightwatch": "^3.9.2",
+      "@vue/cli-plugin-unit-jest": "^3.9.0",
       "@vue/eslint-config-airbnb": "^4.0.0",
-      "@vue/test-utils": "^1.0.0-beta.20",
+      "@vue/test-utils": "^1.0.0-beta.29",
       "babel-jest": "^23.6.0",
       "codecov": "^3.1.0",
       "node-sass": "^4.11.0",
