@@ -63,7 +63,7 @@ module.exports = (api, options, rootOptions) => {
       "@vue/test-utils": "^1.0.0-beta.29",
       "babel-jest": "^23.6.0",
       "codecov": "^3.5.0",
-      "node-sass": "^4.11.0",
+      "node-sass": "^4.12.0",
       "sass-loader": "^7.1.0",
     }
   });
