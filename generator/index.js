@@ -25,7 +25,7 @@ module.exports = (api, options, rootOptions) => {
 
       const modifiedPackageConfig = JSON.stringify(parsedConfig, null, 2);
       fs.writeFile(packageConfig, modifiedPackageConfig, (err) => {
-        api.exitLog('Something went wrong..', err);
+        api.exitLog('Something went wrong..', 'error');
       });
     });
   }
