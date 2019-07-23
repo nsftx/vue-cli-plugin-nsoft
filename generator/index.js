@@ -52,27 +52,19 @@ module.exports = (api, options, rootOptions) => {
       "axios": "^0.18.0",
       "lodash": "^4.17.11",
       "numeral": "^2.0.6",
-      "vue": "^2.5.17",
       "vue-router": "^3.0.1",
       "vuex": "^3.0.1"
     },
     devDependencies: {
       "babel-core": "7.0.0-bridge.0",
-      "@vue/cli-plugin-babel": "^3.0.5",
-      "@vue/cli-plugin-e2e-nightwatch": "^3.0.5",
-      "@vue/cli-plugin-eslint": "^3.0.5",
-      "@vue/cli-plugin-unit-jest": "^3.0.5",
-      "@vue/cli-service": "^3.0.5",
+      "@vue/cli-plugin-e2e-nightwatch": "^3.9.2",
+      "@vue/cli-plugin-unit-jest": "^3.9.0",
       "@vue/eslint-config-airbnb": "^4.0.0",
-      "@vue/test-utils": "^1.0.0-beta.20",
-      "babel-eslint": "^10.0.1",
+      "@vue/test-utils": "^1.0.0-beta.29",
       "babel-jest": "^23.6.0",
-      "codecov": "^3.1.0",
-      "eslint": "^5.8.0",
-      "eslint-plugin-vue": "^5.1.0",
-      "node-sass": "^4.11.0",
+      "codecov": "^3.5.0",
+      "node-sass": "^4.12.0",
       "sass-loader": "^7.1.0",
-      "vue-template-compiler": "^2.5.17"
     }
   });
 
