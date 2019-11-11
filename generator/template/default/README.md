@@ -1,4 +1,4 @@
-# nsoft-template-sample
+# <%= name %>
 
 ## Project setup
 ```
