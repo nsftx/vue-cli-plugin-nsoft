@@ -26,6 +26,6 @@
   },
   "homepage": "https://github.com/chmjs/vue-cli-plugin-nsoft/blob/master/README.md",
   "dependencies": {
-    "rimraf": "^2.6.2"
+    "rimraf": "^3.0.2"
   }
 }
