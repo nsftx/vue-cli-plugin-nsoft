@@ -42,7 +42,7 @@ module.exports = (api, options, rootOptions) => {
     private: true,
     scripts: {
       "serve": "vue-cli-service serve",
-      "build": "vue-cli-service build",
+      "build": "vue-cli-service build --modern",
       "lint": "vue-cli-service lint",
       "test:coverage": "npm run test:unit && codecov",
       "test:e2e": "vue-cli-service test:e2e",
@@ -51,22 +51,28 @@ module.exports = (api, options, rootOptions) => {
       "test:unitWatch": "vue-cli-service test:unit --watch",
     },
     dependencies: {
-      "axios": "^0.18.0",
-      "lodash": "^4.17.11",
+      "axios": "^0.19.2",
+      "lodash": "^4.17.15",
       "numeral": "^2.0.6",
-      "vue-router": "^3.0.1",
-      "vuex": "^3.0.1"
+      "vue-router": "^3.1.6",
+      "vuex": "^3.1.3"
     },
     devDependencies: {
-      "babel-core": "7.0.0-bridge.0",
-      "@vue/cli-plugin-e2e-nightwatch": "^3.9.2",
-      "@vue/cli-plugin-unit-jest": "^3.9.0",
-      "@vue/eslint-config-airbnb": "^4.0.0",
-      "@vue/test-utils": "^1.0.0-beta.29",
+      "@vue/cli-plugin-e2e-cypress": "~4.3.0",
+      "@vue/cli-plugin-eslint": "~4.3.0",
+      "@vue/cli-plugin-router": "~4.3.0",
+      "@vue/cli-plugin-unit-jest": "~4.3.0",
+      "@vue/cli-plugin-vuex": "~4.3.0",
+      "@vue/eslint-config-airbnb": "^5.0.2",
+      "@vue/test-utils": "1.0.0-beta.31",
+      "babel-eslint": "^10.1.0",
+      "eslint": "^6.7.2",
+      "eslint-plugin-import": "^2.20.2",
+      "eslint-plugin-vue": "^6.2.2",
       "babel-jest": "^23.6.0",
       "codecov": "^3.5.0",
-      "node-sass": "^4.12.0",
-      "sass-loader": "^7.1.0",
+      "sass": "^1.26.3",
+      "sass-loader": "^8.0.2",
     }
   });
 
