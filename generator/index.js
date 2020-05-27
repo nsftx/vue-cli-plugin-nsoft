@@ -97,7 +97,7 @@ module.exports = (api, options, rootOptions) => {
     removeConfigurations();
 
     pathsToRemove.forEach((path) => {
-      rimraf(api.resolve(path), () => {});
+      rimraf.sync(api.resolve(path), () => {});
     });
 
   });
