@@ -4,15 +4,14 @@ const rimraf = require('rimraf');
 module.exports = (api, options, rootOptions) => {
 
   const pathsToRemove = [
-    'src/router.js',
-    'src/store.js',
     'src/components/HelloWorld.vue',
     'src/views',
+    'src/assets',
   ]
 
   const removeConfigurations = () => {
     const packageConfig = api.resolve('./package.json');
-    const configsToRemove = ['eslintConfig','browserslist','postcss','jest'];
+    const configsToRemove = ['eslintConfig','postcss','jest'];
 
     fs.readFile(packageConfig, 'utf8', (err, data) => {
       let parsedConfig = JSON.parse(data);
@@ -54,15 +53,15 @@ module.exports = (api, options, rootOptions) => {
       "axios": "^0.19.2",
       "lodash": "^4.17.15",
       "numeral": "^2.0.6",
-      "vue-router": "^3.1.6",
-      "vuex": "^3.1.3"
+      "vue-router": "^4.0.0-0",
+      "vuex": "^4.0.0-0"
     },
     devDependencies: {
-      "@vue/cli-plugin-e2e-cypress": "~4.3.0",
-      "@vue/cli-plugin-eslint": "~4.3.0",
-      "@vue/cli-plugin-router": "~4.3.0",
-      "@vue/cli-plugin-unit-jest": "~4.3.0",
-      "@vue/cli-plugin-vuex": "~4.3.0",
+      "@vue/cli-plugin-e2e-cypress": "~4.5.0",
+      "@vue/cli-plugin-eslint": "~4.5.0",
+      "@vue/cli-plugin-router": "~4.5.0",
+      "@vue/cli-plugin-vuex": "~4.5.0",
+      "@vue/cli-plugin-unit-jest": "~4.5.0",
       "@vue/eslint-config-airbnb": "^5.0.2",
       "@vue/test-utils": "1.0.0-beta.31",
       "babel-eslint": "^10.1.0",
@@ -97,7 +96,7 @@ module.exports = (api, options, rootOptions) => {
     removeConfigurations();
 
     pathsToRemove.forEach((path) => {
-      rimraf.sync(api.resolve(path), () => {});
+      rimraf.sync(api.resolve(path));
     });
 
   });
