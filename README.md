@@ -182,7 +182,6 @@ GatewayMaster.addSlave({
 ├── 📂 tests
 │   ├── 📂 e2e
 │   └── 📂 unit
-├── .browserslistrc
 ├── .editorconfig
 ├── .eslintrc.js
 ├── .gitignore
