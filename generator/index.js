@@ -50,8 +50,8 @@ module.exports = (api, options, rootOptions) => {
       "test:unitWatch": "vue-cli-service test:unit --watch",
     },
     dependencies: {
-      "axios": "^0.19.2",
-      "lodash": "^4.17.15",
+      "axios": "^0.24.2",
+      "lodash": "^4.17.21",
       "numeral": "^2.0.6",
       "vue-router": "^4.0.0-0",
       "vuex": "^4.0.0-0"
@@ -78,7 +78,7 @@ module.exports = (api, options, rootOptions) => {
   if (options.sevenGravityGateway) {
     api.extendPackage({
       dependencies: {
-        "@nsoft/seven-gravity-gateway": "^1.10.5"
+        "@nsoft/seven-gravity-gateway": "^1.14.3"
       }
     });
 
