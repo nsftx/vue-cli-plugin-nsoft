@@ -50,11 +50,11 @@ module.exports = (api, options, rootOptions) => {
       "test:unitWatch": "vue-cli-service test:unit --watch",
     },
     dependencies: {
-      "axios": "^0.24.2",
+      "axios": "^0.26.1",
       "lodash": "^4.17.21",
       "numeral": "^2.0.6",
-      "vue-router": "^4.0.0-0",
-      "vuex": "^4.0.0-0"
+      "vue-router": "^4.0.14",
+      "vuex": "^4.0.2"
     },
     devDependencies: {
       "@vue/cli-plugin-e2e-cypress": "~4.5.0",
@@ -78,7 +78,7 @@ module.exports = (api, options, rootOptions) => {
   if (options.sevenGravityGateway) {
     api.extendPackage({
       dependencies: {
-        "@nsoft/seven-gravity-gateway": "^1.14.3"
+        "@nsoft/seven-gravity-gateway": "^1.16.2"
       }
     });
 
