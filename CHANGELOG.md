@@ -1,3 +1,7 @@
+## [0.6.0] - 2023-02-14
+
+- Migrate package to Github registry (#55)
+
 ## [0.5.0] - 2022-03-28
 
 - Updated production dependecies (#53)
