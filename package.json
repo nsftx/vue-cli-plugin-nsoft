@@ -1,5 +1,5 @@
 {
-  "name": "@nsoft/vue-cli-plugin-nsoft",
+  "name": "@nsftx/vue-cli-plugin-nsoft",
   "version": "0.5.0",
   "description": "NSoft plugin for Vue CLI 3",
   "author": "team@nsoft.com",
@@ -14,7 +14,10 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chmjs/vue-cli-plugin-nsoft"
+    "url": "git+https://github.com/nsftx/vue-cli-plugin-nsoft"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "keywords": [
     "nsoft",
@@ -23,9 +26,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chmjs/vue-cli-plugin-nsoft/issues"
+    "url": "https://github.com/nsftx/vue-cli-plugin-nsoft/issues"
   },
-  "homepage": "https://github.com/chmjs/vue-cli-plugin-nsoft/blob/master/README.md",
+  "homepage": "https://github.com/nsftx/vue-cli-plugin-nsoft/blob/master/README.md",
   "dependencies": {
     "rimraf": "^3.0.2"
   }

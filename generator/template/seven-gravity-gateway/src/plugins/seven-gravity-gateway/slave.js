@@ -1,4 +1,4 @@
-import GatewaySlave from '@nsoft/seven-gravity-gateway/slave';
+import GatewaySlave from '@nsftx/seven-gravity-gateway/slave';
 
 let instance = null;
 
