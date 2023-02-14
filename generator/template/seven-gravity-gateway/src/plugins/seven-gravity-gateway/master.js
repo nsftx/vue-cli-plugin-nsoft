@@ -1,4 +1,4 @@
-import GatewayMaster from '@nsoft/seven-gravity-gateway/master';
+import GatewayMaster from '@nsftx/seven-gravity-gateway/master';
 
 let instance = null;
 

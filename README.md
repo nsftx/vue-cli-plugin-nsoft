@@ -30,7 +30,7 @@ To install nsoft plugin:
 
 ```
 cd my-app
-vue add @nsoft/nsoft
+vue add @nsftx/nsoft
 ```
 
 ## Commands
@@ -94,7 +94,7 @@ vue add @nsoft/nsoft
 #### Seven Gravity Gateway
 
 In case Seven Gravity Gateway is accepted on project creation:
-* `@nsoft/seven-gravity-gateway` is added as NPM dependecy 
+* `@nsftx/seven-gravity-gateway` is added as NPM dependecy 
 * two utilities are created under `src/plugins/seven-gravity-gateway` which are promise based wrappers around `master/slave` instances 
 
 ##### Example 
@@ -198,3 +198,18 @@ GatewayMaster.addSlave({
 ## Testing
 
  - test files should be located next to file (xy.js and xy.spec.js)
+
+
+## Publish
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [releases on this repository](https://github.com/nsftx/vue-cli-plugin-nsoft/releases). 
+
+In order to release next version of the library pull request is required. Use following steps for release.
+
+- Merge approved pull requests that should be in next version to master
+- Create `version-$nextVersion` branch from master
+- run `npm version -$versionType`
+- Push branch & tag to remote
+- After pull request is merged, create a new [Release](https://github.com/nsftx/vue-cli-plugin-nsoft/releases/new)
+- GitHub will trigger action (`.github/workflows/release.yml`) and it will publish package
+
